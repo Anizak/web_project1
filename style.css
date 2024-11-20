@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  /* background-color: rgb(235, 201, 201); */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 25px;
+  padding-left: 25px;
+
+  /* justify-content: space-between; */
+  /* padding: 10px; */
+  /* padding: 0px 30px 20px 35px; */
+}
+
+.logo {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+.logo span {
+  font-weight: bold;
+}
+
+.menuBox {
+  width: 250px;
+  height: 100%;
+  /* background-color: rgb(255, 255, 255); */
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center; /*uxxahayatcna poxum */
+  justify-content: space-between; /* horizonakan uxxutyunna */
+}
+.menuBox li {
+  list-style: none;
+}
+
+.menuBox li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.image {
+  background-image: url("images/architect.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-color: rgb(232, 69, 69); */
+  height: 600px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 30px;
+}
+.image .opacityDiv {
+  height: 600px;
+  width: 100%;
+  background-color: rgba(17, 18, 18, 0.312);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.image .opacityDiv span {
+  color: white;
+  font-size: 30px;
+}
+#br {
+  /* background-blend-mode:hue; */
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.66);
+  color: white;
+  /* opacity: 0.5; */
+}
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+  /* background-color: red; */
+  margin-top: 50px;
+  padding: 30px;
+}
+
+.projects .project_title {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.projects .project_title h2 {
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 100;
+}
+
+.projects .project_images {
+  width: 100%;
+  height: calc(100% - 130px);
+  /* background-color: rgb(222, 0, 0); */
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* gap: 50px; */
+}
+
+.projects .project_images .image_box {
+  width: calc(100% / 3.2);
+  height: 280px;
+  /* background-color: blueviolet; */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.projects .project_images .box1 {
+  background-image: url("images/hous7.jpg");
+}
+
+.projects .project_images .box2 {
+  background-image: url("images/house.jpg");
+}
+.projects .project_images .box3 {
+  background-image: url("images/house2.jpg");
+}
+
+.projects .project_images .box4 {
+  background-image: url("images/house3.jpeg");
+}
+
+.projects .project_images .box5 {
+  background-image: url("images/house4.jpg");
+}
+
+.projects .project_images .box6 {
+  background-image: url("images/house6.jpg");
+}
+.projects .project_images .image_box .image_box_text {
+  width: 150px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about {
+  height: 700px;
+}
+
+.projects .about_text {
+  color: rgb(0, 0, 0);
+  font-size: 16;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.projects .about_images {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: space-between;
+}
+.projects .about_images .about_info {
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.projects .about_images .about_info .image_part {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.projects .about_images .about_names {
+  color: black;
+  font-size: 22px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 400;
+}
+
+.projects .about_images .about_info .position {
+  color: black;
+  font-size: 18px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 400;
+}
+
+.projects .about_images .about_info .position_description {
+  color: black;
+  font-size: 16px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 400;
+}
+
+.projects .about_images .about_info button {
+  width: 100%;
+  height: 30px;
+  border: ivory;
+  color: black;
+  font-size: 16px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  cursor: pointer;
+}
+
+.contact {
+  height: 530px;
+  align-items: start;
+}
+
+.contact span {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+}
+
+.projects .contact_info {
+  width: 100%;
+  height: 330px;
+  /* background-color: brown; */
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.projects .contact_info .input_field {
+  width: 100%;
+  height: 50px;
+  padding: 0px 15px;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+
+.projects .contact_info .contact_button {
+  width: 200px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.map_image img {
+  width: 1380px;
+  height: 600px;
+  margin: 50px 0px 0px 30px;
+}
+
+footer p {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+
+  padding: 30px;
+  background-color: black;
+  color: white;
+}
+
+footer p a {
+  color: white;
+}
